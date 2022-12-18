@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/self-trainer/static/css/main.62ec6001.css",
+    "main.js": "/self-trainer/static/js/main.3f4ef7ea.js",
+    "index.html": "/self-trainer/index.html",
+    "main.62ec6001.css.map": "/self-trainer/static/css/main.62ec6001.css.map",
+    "main.3f4ef7ea.js.map": "/self-trainer/static/js/main.3f4ef7ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62ec6001.css",
+    "static/js/main.3f4ef7ea.js"
+  ]
+}

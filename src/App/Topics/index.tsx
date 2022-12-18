@@ -15,7 +15,7 @@ function Topics() {
                 as={Link}
                 to="/"
             >
-                Home
+                Домой
             </Button>
             <Select
                 onChange={(e) => {
@@ -35,7 +35,7 @@ function Topics() {
                 as={Link}
                 to={`/topics/${topic}`}
             >
-                Start
+                Начать
             </Button>
         </Wrapper>
     );

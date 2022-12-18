@@ -17,13 +17,13 @@ const Home: React.FC<HomeProps> = ({ theme, toggleTheme }) => {
                 as={Link}
                 to="/topics"
             >
-                Topics
+                Темы
             </Button>
             <Button
                 as={Link}
                 to="/training"
             >
-                Random
+                Рандом
             </Button>
         </Wrapper>
     );

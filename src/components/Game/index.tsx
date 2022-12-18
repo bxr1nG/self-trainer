@@ -37,10 +37,10 @@ const Game: React.FC<GameProps> = ({ issues, setMistakes }) => {
                 as={Link}
                 to="/"
             >
-                Home
+                Домой
             </Button>
             <Text>
-                Question {iterator.current + 1}/{issues.length}
+                Вопрос {iterator.current + 1}/{issues.length}
             </Text>
             <FlipCard
                 flipped={flipped}
@@ -61,7 +61,7 @@ const Game: React.FC<GameProps> = ({ issues, setMistakes }) => {
                         flip();
                     }}
                 >
-                    Right
+                    Правильно
                 </Button>
                 <Button
                     red
@@ -71,7 +71,7 @@ const Game: React.FC<GameProps> = ({ issues, setMistakes }) => {
                         flip();
                     }}
                 >
-                    Wrong
+                    Ошибка
                 </Button>
             </Container>
             <Button
@@ -80,7 +80,7 @@ const Game: React.FC<GameProps> = ({ issues, setMistakes }) => {
                     navigate("/statistics");
                 }}
             >
-                Statistics
+                Стастистика
             </Button>
         </Wrapper>
     );

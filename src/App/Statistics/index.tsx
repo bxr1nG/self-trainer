@@ -15,11 +15,11 @@ const Statistics: React.FC<StatisticsProps> = ({ mistakes }) => {
                 as={Link}
                 to="/"
             >
-                Home
+                Домой
             </Button>
             {mistakes.length > 0 ? (
                 <>
-                    <Text as="h2">Mistakes</Text>
+                    <Text as="h2">Ваши ошибки</Text>
                     {mistakes.map((issue) => (
                         <Container key={issue.question}>
                             <Text>
@@ -30,7 +30,7 @@ const Statistics: React.FC<StatisticsProps> = ({ mistakes }) => {
                     ))}
                 </>
             ) : (
-                <Text>You didn&apos;t make any mistakes!</Text>
+                <Text>Вы не сделали ни одной ошибки</Text>
             )}
         </Wrapper>
     );

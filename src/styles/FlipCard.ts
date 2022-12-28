@@ -15,6 +15,7 @@ const FlipCard = styled.div<{
         height: 100%;
         text-align: center;
         transform-style: preserve-3d;
+        font-size: 0.8rem;
 
         cursor: ${({ flipped }) => (flipped ? "default" : "pointer")};
 

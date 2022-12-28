@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{
+    notCentered?: boolean;
+}>`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: ${({ notCentered }) =>
+        notCentered ? "flex-start" : "center"};
+    align-items: ${({ notCentered }) =>
+        notCentered ? "flex-start" : "center"};
     width: 100%;
     height: 100%;
 `;

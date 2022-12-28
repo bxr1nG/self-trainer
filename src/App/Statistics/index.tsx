@@ -8,9 +8,8 @@ import Text from "../../styles/Text";
 import Container from "../../styles/Container";
 
 const Statistics: React.FC<StatisticsProps> = ({ mistakes }) => {
-    console.log(mistakes);
     return (
-        <Wrapper>
+        <Wrapper notCentered>
             <Button
                 as={Link}
                 to="/"
@@ -21,11 +20,17 @@ const Statistics: React.FC<StatisticsProps> = ({ mistakes }) => {
                 <>
                     <Text as="h2">Ваши ошибки</Text>
                     {mistakes.map((issue) => (
-                        <Container key={issue.question}>
+                        <Container
+                            key={issue.question}
+                            notCentered
+                        >
                             <Text>
-                                {issue.topic} - {issue.question}
+                                Тема: {issue.topic} - Вопрос: {issue.question}
                             </Text>
-                            <Text as="div">{issue.answer}</Text>
+                            <Text as="div">
+                                Правильный ответ: {issue.answer}
+                            </Text>
+                            <br />
                         </Container>
                     ))}
                 </>

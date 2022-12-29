@@ -11,6 +11,7 @@ const StyledSelect = styled.select`
     background-color: ${({ theme }) => theme.body};
     transition: all 0.3s ease-in-out;
     outline: none;
+    max-width: 80%;
 `;
 
 export default StyledSelect;

@@ -24,12 +24,9 @@ const Statistics: React.FC<StatisticsProps> = ({ mistakes }) => {
                             key={issue.question}
                             notCentered
                         >
-                            <Text>
-                                Тема: {issue.topic} - Вопрос: {issue.question}
-                            </Text>
-                            <Text as="div">
-                                Правильный ответ: {issue.answer}
-                            </Text>
+                            <Text bold>Тема: {issue.topic}</Text>
+                            <Text>Вопрос: {issue.question}</Text>
+                            <Text thin>Правильный ответ: {issue.answer}</Text>
                             <br />
                         </Container>
                     ))}
